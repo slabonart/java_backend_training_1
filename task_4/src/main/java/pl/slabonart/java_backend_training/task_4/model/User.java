@@ -1,7 +1,9 @@
 package pl.slabonart.java_backend_training.task_4.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,6 +16,8 @@ import java.util.Date;
 @Table(name="users")
 @Builder
 @Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
 
     @Id
