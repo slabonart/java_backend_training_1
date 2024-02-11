@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: "dev"
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:local
+    username: SA
+    password:
+custom-datasource:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, appInfo
